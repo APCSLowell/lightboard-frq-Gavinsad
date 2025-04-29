@@ -35,7 +35,7 @@ if(Math.random()<=0.4){lights[i][j]=true;}
   else if(lights[row][col]==false){if(x%3==0){return true;}}
   else return lights[row][col];
  
-  }
+  }}
   public boolean[][] getLights()
   {
     return lights;
