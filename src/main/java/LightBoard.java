@@ -31,8 +31,9 @@ if(Math.random()<=0.4){lights[i][j]=true;}
   {
   int x=0;
   for(int i=0;i<lights.length;i++){if (lights[i][col]){x++;}}
+    
    if(lights[row][col]&&x%2==0){return false;}
-  if(lights[row][col]&&x%3==0){return true;}
+  if(!lights[row][col]&&x%3==0){return true;}
    return lights[row][col];
  
   }
